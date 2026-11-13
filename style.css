@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: grey;
+}
+#theme-btn{
+    display: block;
+    margin:15px auto;
+    padding :10px 18px;
+    background-color:#222;
+    color:white;
+    border:none;
+    cursor:pointer
+}
+
+header {
+    background-color: #5c4033;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+nav h1 {
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #5c4033;
+    font-size: 30px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+
+#home {
+    background-color: #f5e6d3;
+}
+
+#home img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+#offers {
+    background-color: white;
+}
+
+#offers article {
+    display: inline-block;
+    width: 28%;
+    margin: 10px;
+    padding: 25px;
+    background-color: #f5e6d3;
+    border-radius: 10px;
+    vertical-align: top;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#offers article h3 {
+    color: #5c4033;
+}
+
+
+#menu ol,
+#menu ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 2;
+}
+
+#menu ol {
+    margin-right: 60px;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #8b6f5a;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #5c4033;
+    color: white;
+}
+
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #5c4033;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3f2b22;
+}
+
+/* Footer */
+footer {
+    background-color: #5c4033;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer h2 {
+    margin-top: 0;
+}
+
+footer a {
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #offers article {
+        display: block;
+        width: auto;
+        margin: 15px 0;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #menu ol {
+        margin-right: 0;
+    }
+
+    section {
+        padding: 35px 15px;
+    }
+}
+/* Dark Mode */
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #111;
+}
+
+.dark-mode section {
+    background-color: #333;
+}
+
+.dark-mode section h2,
+.dark-mode #offers article h3 {
+    color: #f5e6d3;
+}
+
+.dark-mode table {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode th {
+    background-color: #111;
+}
+
+.dark-mode td {
+    border-color: #777;
+}
+
+.dark-mode form {
+    background-color: #444;
+    color: white;
+}
