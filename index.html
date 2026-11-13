@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bites Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <div>
+                <h1>Bites Cafe</h1>
+                <p id="status"></p>
+            </div>
+
+            <button id="theme-button">Toggle Light/Dark Mode</button>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Home Section -->
+
+        <section id="home">
+
+            <h2>Welcome to Bites Cafe</h2>
+
+            <p>
+                Enjoy delicious food, freshly brewed coffee,
+                and a comfortable place to relax with friends.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+                alt="Interior of Bites Cafe"
+                width="500">
+
+        </section>
+
+
+        <!-- Offers Section -->
+
+        <section id="offers">
+
+            <h2>What We Offer</h2>
+
+            <article>
+
+                <h3>Fresh Coffee</h3>
+
+                <p>
+                    Enjoy freshly brewed coffee made from high-quality
+                    coffee beans.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Delicious Sandwiches</h3>
+
+                <p>
+                    Try our freshly prepared sandwiches made with
+                    fresh ingredients.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Sweet Desserts</h3>
+
+                <p>
+                    Treat yourself to our delicious cakes, cookies,
+                    and other sweet desserts.
+                </p>
+
+            </article>
+
+
+            <!-- About Us Article -->
+
+            <article>
+
+                <h3>About Bites Cafe</h3>
+
+                <p>
+                    Bites Cafe is a comfortable place where friends
+                    and families can enjoy delicious food and freshly
+                    brewed coffee.
+                </p>
+
+                <p id="more-text" style="display: none;">
+                    We carefully prepare our food using fresh
+                    ingredients and provide a relaxing environment
+                    for our customers. Our goal is to make every
+                    visit enjoyable and memorable.
+                </p>
+
+                <button id="read-more">Read More</button>
+
+            </article>
+
+        </section>
+
+
+        <!-- Menu Section -->
+
+        <section id="menu">
+
+            <h2>Our Popular Menu</h2>
+
+            <h3>Top 4 Customer Favorites</h3>
+
+            <ol type="A">
+                <li>Cappuccino</li>
+                <li>Chicken Sandwich</li>
+                <li>Chocolate Cake</li>
+                <li>Blueberry Muffin</li>
+            </ol>
+
+
+            <h3>Available Drinks</h3>
+
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Fresh Juice</li>
+                <li>Milkshake</li>
+            </ul>
+
+
+            <!-- Order Calculator -->
+
+            <h3>Order Menu</h3>
+
+            <label>
+                <input type="checkbox" class="menu-item" value="3">
+                Espresso - $3
+            </label>
+
+            <br>
+
+            <label>
+                <input type="checkbox" class="menu-item" value="4">
+                Croissant - $4
+            </label>
+
+            <br>
+
+            <label>
+                <input type="checkbox" class="menu-item" value="5">
+                Cappuccino - $5
+            </label>
+
+            <br>
+
+            <label>
+                <input type="checkbox" class="menu-item" value="6">
+                Chicken Sandwich - $6
+            </label>
+
+            <p id="total">Total: $0</p>
+
+        </section>
+
+
+        <!-- Menu Table and Category Filter -->
+
+        <section id="menu-table">
+
+            <h2>Menu Items</h2>
+
+
+            <!-- Category Filter Buttons -->
+
+            <button class="filter-button" data-category="all">
+                All
+            </button>
+
+            <button class="filter-button" data-category="drinks">
+                Drinks
+            </button>
+
+            <button class="filter-button" data-category="pastries">
+                Pastries
+            </button>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr data-category="drinks">
+                        <td>Espresso</td>
+                        <td>Drinks</td>
+                        <td>$3</td>
+                    </tr>
+
+                    <tr data-category="drinks">
+                        <td>Cappuccino</td>
+                        <td>Drinks</td>
+                        <td>$5</td>
+                    </tr>
+
+                    <tr data-category="pastries">
+                        <td>Croissant</td>
+                        <td>Pastries</td>
+                        <td>$4</td>
+                    </tr>
+
+                    <tr data-category="pastries">
+                        <td>Blueberry Muffin</td>
+                        <td>Pastries</td>
+                        <td>$4</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Opening Hours Section -->
+
+        <section>
+
+            <h2>Opening Hours</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Day</th>
+                        <th>Opening Time</th>
+                        <th>Closing Time</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>Monday</td>
+                        <td>8:00 AM</td>
+                        <td>9:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>8:00 AM</td>
+                        <td>9:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8:00 AM</td>
+                        <td>9:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>8:00 AM</td>
+                        <td>9:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>8:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Contact / Reservation Form -->
+
+        <section id="contact">
+
+            <h2>Reserve a Table</h2>
+
+            <form>
+
+                <!-- Name -->
+
+                <label for="name">Full Name:</label>
+
+                <input type="text"
+                       id="name"
+                       name="name">
+
+                <br><br>
+
+
+                <!-- Email -->
+
+                <label for="email">Email:</label>
+
+                <input type="email"
+                       id="email"
+                       name="email">
+
+                <br><br>
+
+
+                <!-- Birth Year -->
+
+                <label for="birth-year">Birth Year:</label>
+
+                <input type="text"
+                       id="birth-year"
+                       name="birth-year">
+
+                <br><br>
+
+
+                <!-- Reservation Date -->
+
+                <label for="date">Reservation Date:</label>
+
+                <input type="date"
+                       id="date"
+                       name="date">
+
+                <br><br>
+
+
+                <!-- Seating -->
+
+                <p>Choose your preferred seating:</p>
+
+                <input type="radio"
+                       id="indoor"
+                       name="seating"
+                       value="indoor">
+
+                <label for="indoor">Indoor</label>
+
+
+                <input type="radio"
+                       id="outdoor"
+                       name="seating"
+                       value="outdoor">
+
+                <label for="outdoor">Outdoor</label>
+
+                <br><br>
+
+
+                <!-- Additional Preferences -->
+
+                <p>Additional preferences:</p>
+
+                <input type="checkbox"
+                       id="window"
+                       name="preference"
+                       value="window">
+
+                <label for="window">Window Seat</label>
+
+
+                <input type="checkbox"
+                       id="quiet"
+                       name="preference"
+                       value="quiet">
+
+                <label for="quiet">Quiet Table</label>
+
+                <br><br>
+
+
+                <!-- Special Request -->
+
+                <label for="message">Special Request:</label>
+
+                <br>
+
+                <textarea id="message"
+                          name="message"
+                          rows="4"
+                          cols="30"></textarea>
+
+                <br><br>
+
+
+                <!-- Special Notes -->
+
+                <label for="special-notes">
+                    Special Order Instructions:
+                </label>
+
+                <br>
+
+                <textarea id="special-notes"
+                          name="special-notes"
+                          maxlength="100"
+                          rows="4"
+                          cols="30"></textarea>
+
+                <p id="counter">
+                    100 characters remaining
+                </p>
+
+                <br>
+
+
+                <!-- Submit Button -->
+
+                <button type="submit">
+                    Reserve Table
+                </button>
+
+
+                <!-- JavaScript Message -->
+
+                <p id="form-message"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>Bites Cafe</h2>
+
+        <p>
+            123 Main Street, Islamabad, Pakistan
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:info@bitescafe.com">
+                info@bitescafe.com
+            </a>
+        </p>
+
+        <p>
+            &copy; 2026 Bites Cafe. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
